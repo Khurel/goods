@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "82834712138",
+    "project_id": "oldfurniture",
+    "storage_bucket": "oldfurniture.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82834712138:android:ac1b8961c0bf7677f768b3",
+        "android_client_info": {
+          "package_name": "com.flutterflow.courts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82834712138-q61j95fkhl39sb6j9s4nu70r3ksbjl4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBESPWrvA3Bv-IoBxerZhP8Pz0UXA5Hmjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82834712138-q61j95fkhl39sb6j9s4nu70r3ksbjl4l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "82834712138-b52r5uq67co0vgkdq6epdbbi7frl2uai.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flutterflow.courts"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

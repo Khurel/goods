@@ -60,44 +60,36 @@ class _CourtDetailsWidgetState extends State<CourtDetailsWidget> {
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Row(
-                        mainAxisSize: MainAxisSize.max,
+                      Stack(
                         children: [
-                          Container(
-                            width: MediaQuery.of(context).size.width,
-                            height: 320,
-                            decoration: BoxDecoration(
-                              color: FlutterFlowTheme.background,
-                            ),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      20, 44, 0, 0),
-                                  child: Card(
-                                    clipBehavior: Clip.antiAliasWithSaveLayer,
-                                    color: Color(0xB2111417),
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(40),
-                                    ),
-                                    child: FlutterFlowIconButton(
-                                      borderColor: Colors.transparent,
-                                      borderRadius: 30,
-                                      buttonSize: 46,
-                                      icon: Icon(
-                                        Icons.arrow_back_rounded,
-                                        color: FlutterFlowTheme.white,
-                                        size: 20,
-                                      ),
-                                      onPressed: () async {
-                                        Navigator.pop(context);
-                                      },
-                                    ),
-                                  ),
+                          Image.network(
+                            widget.court.imageUrl,
+                            width: double.infinity,
+                            height: 300,
+                            fit: BoxFit.cover,
+                          ),
+                          Padding(
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(20, 44, 0, 0),
+                            child: Card(
+                              clipBehavior: Clip.antiAliasWithSaveLayer,
+                              color: Color(0xB2111417),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(40),
+                              ),
+                              child: FlutterFlowIconButton(
+                                borderColor: Colors.transparent,
+                                borderRadius: 30,
+                                buttonSize: 46,
+                                icon: Icon(
+                                  Icons.arrow_back_rounded,
+                                  color: FlutterFlowTheme.white,
+                                  size: 20,
                                 ),
-                              ],
+                                onPressed: () async {
+                                  Navigator.pop(context);
+                                },
+                              ),
                             ),
                           ),
                         ],

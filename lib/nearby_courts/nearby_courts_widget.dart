@@ -126,7 +126,7 @@ class _NearbyCourtsWidgetState extends State<NearbyCourtsWidget> {
                       ),
                     )
                     .toList(),
-                markerColor: GoogleMarkerColor.violet,
+                markerColor: GoogleMarkerColor.orange,
                 mapType: MapType.normal,
                 style: GoogleMapStyle.standard,
                 initialZoom: 14,

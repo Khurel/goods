@@ -86,10 +86,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.network(
-                                    valueOrDefault<String>(
-                                      profilePageUsersRecord.photoUrl,
-                                      'https://images.unsplash.com/photo-1596831440741-238efd4619cc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ1fHxiYXNrZXRiYWxsJTIwcGxheWVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-                                    ),
+                                    profilePageUsersRecord.photoUrl,
                                     fit: BoxFit.fitHeight,
                                   ),
                                 ),
@@ -193,34 +190,46 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                   width: 2,
                                 ),
                               ),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        24, 0, 0, 0),
-                                    child: Text(
-                                      'Edit Profile',
-                                      style:
-                                          FlutterFlowTheme.bodyText1.override(
-                                        fontFamily: 'Lexend Deca',
-                                        color: Color(0xFF090F13),
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.normal,
+                              child: InkWell(
+                                onTap: () async {
+                                  await Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => EditProfileWidget(
+                                        usersRecord: profilePageUsersRecord,
                                       ),
                                     ),
-                                  ),
-                                  Expanded(
-                                    child: Align(
-                                      alignment: AlignmentDirectional(0.9, 0),
-                                      child: Icon(
-                                        Icons.arrow_forward_ios,
-                                        color: Color(0xFF95A1AC),
-                                        size: 18,
+                                  );
+                                },
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          24, 0, 0, 0),
+                                      child: Text(
+                                        'Edit Profile',
+                                        style:
+                                            FlutterFlowTheme.bodyText1.override(
+                                          fontFamily: 'Lexend Deca',
+                                          color: Color(0xFF090F13),
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.normal,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                    Expanded(
+                                      child: Align(
+                                        alignment: AlignmentDirectional(0.9, 0),
+                                        child: Icon(
+                                          Icons.arrow_forward_ios,
+                                          color: Color(0xFF95A1AC),
+                                          size: 18,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           ),

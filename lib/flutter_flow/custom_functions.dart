@@ -28,7 +28,7 @@ String getAverageRating(List<CommentsRecord> comments) {
 LatLng getInitialMapLocation(LatLng userLocation) {
   if (userLocation == null ||
       (userLocation.latitude == 0 && userLocation.longitude == 0)) {
-    return LatLng(40.8295538, -73.9386429);
+    return LatLng(35.669041050337334, 139.60104744138974);
   }
   return userLocation;
 }

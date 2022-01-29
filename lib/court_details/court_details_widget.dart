@@ -68,12 +68,6 @@ class _CourtDetailsWidgetState extends State<CourtDetailsWidget> {
                             height: 320,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.background,
-                              image: DecorationImage(
-                                fit: BoxFit.fitWidth,
-                                image: Image.asset(
-                                  'assets/images/classHero.jpg',
-                                ).image,
-                              ),
                             ),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,

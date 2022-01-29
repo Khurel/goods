@@ -107,8 +107,8 @@ class _AddCourtWidgetState extends State<AddCourtWidget> {
                           }
                         }
                       },
-                      child: Image.asset(
-                        'assets/images/coverEmpty@3x.png',
+                      child: Image.network(
+                        '',
                         width: 100,
                         height: 100,
                         fit: BoxFit.cover,
